@@ -8,14 +8,248 @@
             "id": "q1",
             "question": "What is the correct syntax for referring to an external script called 'script.js'?",
             "options": [
-              "A. <script name='script.js'>",
-              "B. <script href='script.js'>",
-              "C. <script src='script.js'>",
-              "D. <script file='script.js'>"
+              "<script name='script.js'>",
+              "<script href='script.js'>",
+              "<script src='script.js'>",
+              "<script file='script.js'>"
             ],
-            "correctAnswer": "C",
+            "correctAnswer": "<script src='script.js'>",
+            "timeLimit": 10
+          },
+          {
+            "id": "q2",
+            "question": "What is a closure in JavaScript?",
+            "options": [
+              "A way to define object properties",
+              "A function along with its lexical environment",
+              "A method to handle errors",
+              "A type of loop"
+            ],
+            "correctAnswer": "A function along with its lexical environment",
+            "timeLimit": 10
+          },
+          {
+            "id": "q3",
+            "question": "What is the difference between == and === in JavaScript?",
+            "options": [
+              "They are the same",
+              "== compares values, === compares values and types",
+              "== compares types, === compares values",
+               "== assigns values, === compares values"
+            ],
+            "correctAnswer": "== compares values, === compares values and types",
+            "timeLimit": 10
+          },
+           {
+            "id": "q4",
+            "question": "Which of the following is not a JavaScript data type?",
+            "options": [
+              "String",
+              "Number",
+              "Boolean",
+              "Character"
+            ],
+            "correctAnswer": "Character",
+            "timeLimit": 10
+          },
+          {
+            "id": "q5",
+            "question": "What does the 'this' keyword refer to in JavaScript?",
+            "options": [
+              "The current function",
+              "The global object",
+              "The object that is executing the current function",
+              "The parent element"
+            ],
+            "correctAnswer": "The object that is executing the current function",
+            "timeLimit": 10
+          },
+          {
+            "id": "q6",
+            "question": "How do you declare a variable in JavaScript?",
+            "options": [
+              "int x;",
+              "variable x;",
+              "let x;",
+              "string x;"
+            ],
+            "correctAnswer": "let x;",
+            "timeLimit": 10
+          },
+          {
+            "id": "q7",
+            "question": "What is event bubbling in the DOM?",
+            "options": [
+              "Events are captured from the target element up to the root",
+              "Events are handled only by the target element",
+              "Events propagate from the root element down to the target",
+              "It's a type of animation"
+            ],
+            "correctAnswer": "Events are captured from the target element up to the root",
+            "timeLimit": 10
+          },
+          {
+            "id": "q8",
+            "question": "What is a Promise in JavaScript?",
+            "options": [
+              "A way to define object prototypes",
+              "An object representing the eventual completion (or failure) of an asynchronous operation",
+              "A mechanism for handling synchronous code",
+              "A type of data structure"
+            ],
+            "correctAnswer": "An object representing the eventual completion (or failure) of an asynchronous operation",
+            "timeLimit": 10
+          },
+          {
+            "id": "q9",
+            "question": "What is the difference between `null` and `undefined` in JavaScript?",
+            "options": [
+              "They are the same",
+              "`null` represents an intentional absence of a value, `undefined` typically indicates a variable that has not been assigned a value",
+              "`undefined` represents an intentional absence of a value, `null` typically indicates a variable that has not been assigned a value",
+              "`null` is a primitive, `undefined` is not"
+            ],
+            "correctAnswer": "`null` represents an intentional absence of a value, `undefined` typically indicates a variable that has not been assigned a value",
+            "timeLimit": 10
+          },
+          {
+            "id": "q10",
+            "question": "What are higher-order functions in JavaScript?",
+            "options": [
+              "Functions that operate on DOM elements",
+              "Functions that accept other functions as arguments or return functions",
+              "Functions that are defined using arrow syntax",
+              "Functions that are part of a class"
+            ],
+            "correctAnswer": "Functions that accept other functions as arguments or return functions",
             "timeLimit": 10
           }
+        ]
+      },
+      {
+        "id": "css_basics",
+        "name": "CSS Basics",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What does CSS stand for?'?",
+            "options": [
+              "Creative Style Sheet",
+              "Cascading Style Sheet",
+              "Colorful Style Sheet",
+              "Computer Style Sheet>"
+            ],
+            "correctAnswer": "Cascading Style Sheet",
+            "timeLimit": 10
+          },
+          {
+            "id": "q2",
+            "question": "Which CSS property is used to control the layout of items in a flex container?",
+            "options": [
+              "style",
+              "layout",
+              "flex-direction",
+              "arrange"
+            ],
+            "correctAnswer": "flex-direction",
+            "timeLimit": 10
+          },
+          {
+            "id": "q3",
+            "question": "What is the difference between `inline`, `block`, and `inline-block` display values?",
+            "options": [
+              "They are the same",
+              "Inline takes necessary width, block takes full width, inline-block is a hybrid",
+              "Block takes necessary width, inline takes full width, inline-block is a hybrid",
+              "They control text alignment"
+            ],
+            "correctAnswer": "Inline takes necessary width, block takes full width, inline-block is a hybrid",
+            "timeLimit": 10
+          },
+          {
+            "id": "q4",
+            "question": "Which CSS pseudo-class is used to style an element when the mouse hovers over it?",
+            "options": [
+              ":active",
+              ":focus",
+              ":hover",
+              ":visited"
+            ],
+            "correctAnswer": ":hover",
+            "timeLimit": 10
+          },
+          {
+            "id": "q5",
+            "question": "What is the purpose of the CSS `position: absolute;`?",
+            "options": [
+              "To fix an element to the viewport",
+              "To position an element relative to its first positioned ancestor",
+              "To position an element statically in the normal flow",
+              "To make an element invisible"
+            ],
+            "correctAnswer": "To position an element relative to its first positioned ancestor",
+            "timeLimit": 10
+          },
+          {
+            "id": "q6",
+            "question": "What are media queries in CSS used for?",
+            "options": [
+              "To create animations",
+              "To apply different styles for different devices or screen sizes",
+              "To select specific HTML elements",
+              "To define custom CSS properties"
+            ],
+            "correctAnswer": "To apply different styles for different devices or screen sizes",
+            "timeLimit": 10
+          },
+          {
+            "id": "q7",
+            "question": "What is the difference between `id` and `class` selectors in CSS?",
+            "options": [
+              "They are interchangeable",
+              "ID is unique and starts with #, class can be reused and starts with .",
+              "Class is unique and starts with ., ID can be reused and starts with #",
+              "ID is for styling text, class is for styling layout"
+            ],
+            "correctAnswer": "ID is unique and starts with #, class can be reused and starts with .",
+            "timeLimit": 10
+          },
+          {
+            "id": "q8",
+            "question": "What is the purpose of the `transform` property in CSS?",
+            "options": [
+              "To change the text color",
+              "To move, rotate, scale, or skew elements",
+              "To create transitions between styles",
+              "To define grid layouts"
+            ],
+            "correctAnswer": "To move, rotate, scale, or skew elements",
+            "timeLimit": 10
+          },
+          {
+            "id": "q9",
+            "question": "Which CSS property is used to control the transparency of an element?",
+            "options": [
+              "visibility",
+              "opacity",
+              "transparency",
+              "alpha"
+            ],
+            "correctAnswer": "opacity",
+            "timeLimit": 10
+          },
+          {
+            "id": "q10",
+            "question": "What is the purpose of the `box-sizing: border-box;` property?",
+            "options": [
+              "To include padding and border in the element's total width and height",
+              "To exclude padding and border from the element's total width and height",
+              "To add a border around the content box",
+              "To define the spacing between boxes"
+            ],
+            "correctAnswer": "To include padding and border in the element's total width and height",
+            "timeLimit": 10
+          }      
         ]
       }
     ]
