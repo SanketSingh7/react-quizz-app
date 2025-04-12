@@ -11,15 +11,26 @@ import questionsData from "../Data/questions.json";
 import { useEffect, useState } from "react";
 
 const CategorySelection = () => {
-  // Hook to navigate between routes
+  // Hook to navigate between routes, useState is similar to component-level state in Angular.
   const navigate = useNavigate();
 
-  // Using Use sate hook as the category will be changing,State to hold the categories
+  /**
+   * 🔄 useEffect hook:
+   * This runs after the component renders.
+   * It's similar to Angular's `ngOnInit()` where you initialize data.
+   *
+   * 📌 Syntax: useEffect(callback, dependencyArray)
+   * - callback: This is the function that runs after render
+   * - dependencyArray:
+   *    - If empty (`[]`), this effect runs only once (componentDidMount)
+   *    - If you pass values, it re-runs only when those values change
+   */
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
+    // Load categories from JSON data and set state
     setCategories(questionsData.categories);
-  }, []);
+  }, []); // ✅ Empty array = run only once (like ngOnInit)
 
   const handleCategorySelection = (categoryId) => {
     navigate(`/quiz/${categoryId}`);

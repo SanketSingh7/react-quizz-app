@@ -1,38 +1,93 @@
 .App {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* src/styles.css */
+
+/* Reset some default styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Centered layout container */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Headings */
+h1, h2 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Button styles */
+button {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question {
+  color: #0056b3;
+  font-size: 16px;
+}
+
+/* Option Buttons */
+.option-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0.8rem;
+  text-align: left;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option-button.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.option-button.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.option-button:hover {
+  background-color: #dcdcdc;
+}
+.css-1cmet5c-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: none !important;
+}
+/* Timer Style */
+.timer {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ff5722;
+  text-align: right;
 }
